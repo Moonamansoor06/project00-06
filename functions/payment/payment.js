@@ -1,4 +1,4 @@
-// Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
+  // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
 exports.handler = async (event, context) => {
@@ -20,9 +20,9 @@ exports.handler = async (event, context) => {
     return { statusCode: 500, body: err.toString() }
   }
 }
- 
 
-/* 
+ 
+ /* 
 require('dotenv').config();
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
@@ -46,6 +46,7 @@ exports.handler = function(event, context, callback) {
 
   //-- Parse the body contents into an object.
   const data = JSON.parse(event.body);
+  console.log('data is =====>',data)
 
   //-- Make sure we have all required data. Otherwise, escape.
   if(
@@ -93,4 +94,4 @@ exports.handler = function(event, context, callback) {
     }
   );
 }
- */
+  */

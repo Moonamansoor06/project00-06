@@ -16,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-source-stripe": "^3.2.2",
     "gatsby-transformer-sharp": "^3.11.0",
     "git": "^0.1.5",
     "prop-types": "^15.7.2",
@@ -46,5 +47,13 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:8000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
   }
 }

@@ -1,0 +1,23 @@
+.formClass {
+    width: "400px";
+    height:auto;
+    background-color:rgb(224, 232, 240);
+   
+
+
+     text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3em;
+    font-size: large;
+    color: #32325d;
+    padding:1rem
+}
+.StripeElement{
+   
+    padding:"1 rem";
+  
+}
+.cardElement{
+    margin-top: 2rem;
+}

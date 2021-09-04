@@ -2,8 +2,8 @@
 * Use the CSS tab above to style your Element's container.
 */
 import React from 'react';
-import {CardElement} from '@stripe/react-stripe-js';
-
+import { CardNumberElement,CardExpiryElement,CardCvcElement } from '@stripe/react-stripe-js';
+import "./cardSection.css";
 const CARD_ELEMENT_OPTIONS = {
   style: {
     base: {
@@ -24,10 +24,18 @@ const CARD_ELEMENT_OPTIONS = {
 
 function CardSection() {
   return (
-    <label>
-      Card details
-      <CardElement options={CARD_ELEMENT_OPTIONS} />
-    </label>
+    <div className="formClass">
+      <label className="heading">
+        Card details  </label>
+        <div className="cardElement">
+        {/*    <CardElement options={CARD_ELEMENT_OPTIONS} /> */}
+        <CardNumberElement options={CARD_ELEMENT_OPTIONS} />
+          <CardExpiryElement  options={CARD_ELEMENT_OPTIONS} />
+          <CardCvcElement  options={CARD_ELEMENT_OPTIONS} />
+      
+</div>
+    
+    </div>
   );
 };
 

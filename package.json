@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "@sideway/address": "^4.1.2",
+    "@stripe/stripe-js": "^1.17.1",
     "build": "^0.1.4",
     "gatsby": "^3.13.0",
     "gatsby-cli": "^3.13.0",
@@ -17,6 +19,7 @@
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-plugin-snipcartv3": "^2.3.3",
     "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-source-stripe": "^3.2.2",
     "gatsby-transformer-sharp": "^3.13.0",
     "joi": "^17.4.2",
     "prop-types": "^15.7.2",

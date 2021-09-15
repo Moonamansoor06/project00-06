@@ -10,7 +10,15 @@ module.exports = {
         }
     
     },
-    `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
+    {
+          resolve: `gatsby-source-stripe`,
+          options: {
+            objects: ["Price"],
+            secretKey: process.env.STRIPE_SECRET_KEY,
+            downloadFiles: false,
+          },
+        },
     
   ],
 }

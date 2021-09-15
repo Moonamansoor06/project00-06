@@ -79,7 +79,7 @@ const getStripe = () => {
         title="item"
       />
       <CardActions>
-      <Button 
+      <button 
       class="snipcart-add-item"
       data-item-id={prod.product.id}
       data-item-price={prod.product.unit_amount}
@@ -90,7 +90,7 @@ const getStripe = () => {
          
         >
         Add { prod.product.product.name  } to cart
-        </Button>
+        </button>
       </CardActions>
     </Card>
    

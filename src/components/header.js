@@ -5,14 +5,17 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+    
+      background: `#ada397`,
       marginBottom: `1.45rem`,
+      alignItems:"start",
+      alignContent:'start'
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 500,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -22,6 +25,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            textTransform:'capitalize'
           }}
         >
           {siteTitle}
